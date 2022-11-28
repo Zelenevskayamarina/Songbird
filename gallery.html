@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>	
+    <title>songbird</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800;900&family=Raleway:wght@400;700;800&display=swap' rel='stylesheet'/>
+    <link rel='stylesheet' href='./css/app.min.css'> 
+</head>
+<body class='body'>
+  <header class='header'>
+    <div class='container'>
+      <div class='header__container'>
+        <div class='header__logo'>
+          <a class='footer__logo-link' href='index.html'>
+            <img class='header__logo-pic' src='./assets/images/header/bird-icon-dark.png' alt='logo'>
+          </a>
+        </div>
+        <div class='header__overlay'></div>
+          <nav class='header__nav'>
+            <ul class='header__list'>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='index' href='index.html'>главная</a>
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='quiz' href='quiz.html'>викторина</a>
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='gallery' href='#'>галерея</a>                
+              </li>
+            </ul>
+          </nav>  
+      <button class='header__burger burger'>
+        <span class='burger__line burger__line_first'></span>
+        <span class='burger__line burger__line_second'></span>
+        <span class='burger__line burger__line_third'></span>
+    </button>
+    <div class='header__setting'>
+      <p class='header__setting-option'>выбрать язык</p>
+      <select class='header__setting-language' name='language' id='language'>
+        <option value='en' class='language-option'>английский</option>
+        <option value='ru' class='language-option'>русский</option>
+      </select>
+    </div>  
+    </div>
+  </div>
+</header>
+<main class='main' data-id-page-header='gallery' data-id-page-footer='gallery'>
+  <section class='gallery'>
+    <div class='container'>
+      <div class='gallery__container'>
+        <div class='gallery__slider'>
+          <div class='gallery__slide'>
+            <div class='gallery__block bird'>
+              <div class='bird__container bird__container-third'>
+                <div class='bird__item'>
+                  <img class='bird__pic' src='./assets/images/quiz/bird-plug.gif' alt='bird-plug'>
+                </div>
+                <div class='bird__item'>
+                  <p class='bird__title-main'>x x x</p>
+                  <p class='bird__title'>x x x</p>
+                  <div class='bird__player player'>
+                    <div class='player__control'>
+                      <button class='player__control-play play'></button>
+                    </div>
+                    <div class='player__song'></div>
+                    <div class='player__panel'>
+                      <div class='player__progress'>
+                        <div class='player__progress-bar'></div>
+                      </div>
+                      <div class='player__time'>
+                        <div class='player__time-current'>0:00</div>
+                        <div class='player__time-divider'>/</div>
+                        <div class='player__time-total'>0:00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='player__volume'>
+                    <button class='player__volume-btn' type='button'></button>
+                    <div class='player__volume-control'>
+                      <input class='player__volume-control-slider' type='range' max='100' value='50' step='1' >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class='bird__description bird__description-third'></p>
+            </div>
+          </div>
+          <button class='gallery__slider-btn gallery__slider-btn_prev'>
+            <img class='gallery__arrow-next-icon' src='https://img.icons8.com/ios/100/null/circled-right-2.png'/>
+          </button>
+          <button class='gallery__slider-btn gallery__slider-btn_next'>
+            <img class='gallery__arrow-next-icon' src='https://img.icons8.com/ios/100/null/circled-right-2.png'/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script type='module' src='./js/app.js'></script>
+<script type='module' src='./js/gallery.js'></script>
+<script type='module' src='./js/birds-ru.js'></script>
+<script type='module' src='./js/birds-en.js'></script>
+<footer class='footer'>
+	<div class='container'>
+		<div class='footer__container'>
+      <div class='footer__copyright'>
+				<p class='footer__copyright-text'>All Rights Reserved © 2022</p>
+			</div>
+			<div class='footer__socials'>
+				<ul class='footer__socials-list'>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://github.com/Zelenevskayamarina'>github</a>
+					</li>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://rs.school/js/'>R   S<br>Sc ho ol</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</footer>
+</body>
+</html>

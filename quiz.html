@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>	
+    <title>songbird</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800;900&family=Raleway:wght@400;700;800&display=swap' rel='stylesheet'/>
+    <link rel='stylesheet' href='./css/app.min.css'> 
+</head>
+<body class='body'>
+  <header class='header'>
+    <div class='container'>
+      <div class='header__container'>
+        <div class='header__logo'>
+          <a class='footer__logo-link' href='index.html'>
+            <img class='header__logo-pic' src='./assets/images/header/bird-icon-dark.png' alt='logo'>
+          </a>
+        </div>
+        <div class='header__overlay'></div>
+          <nav class='header__nav'>
+            <ul class='header__list'>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='index' href='index.html'>главная</a>
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='quiz' href='#'>викторина</a>
+              </li>
+              <li class='header__item none'>
+                <a class='header__link' data-id-nav-header='results' href='results.html'>результаты</a>                
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='gallery' href='gallery.html'>галерея</a>                
+              </li>
+            </ul>
+          </nav> 
+      <button class='header__burger burger'>
+        <span class='burger__line burger__line_first'></span>
+        <span class='burger__line burger__line_second'></span>
+        <span class='burger__line burger__line_third'></span>
+    </button>
+    <div class='header__setting'>
+      <p class='header__setting-option'>выбрать язык</p>
+      <select class='header__setting-language' name='language' id='language'>
+        <option value='en' class='language-option'>английский</option>
+        <option value='ru' class='language-option'>русский</option>
+      </select>
+    </div>  
+  </div>
+</header>
+
+<main class='main' data-id-page-header='quiz' data-id-page-footer='quiz'>
+  <section class='quiz'>
+    <div class='container'>
+      <div class='quiz__container'>
+        <div class='quiz-info'>
+          <div class='quiz-info__block'>
+              <p class='quiz-info__title'>Songbird</p>
+              <p class='quiz-info__score'>Счет: 0</p>
+            </div>
+            <div class='quiz-info__block'>
+              <ul class='quiz-info__list'>
+                <li class='quiz-info__item first'>разминка</li>
+                <li class='quiz-info__item second'>воробьиные</li>
+                <li class='quiz-info__item third'>лесные тпицы</li>
+                <li class='quiz-info__item fourth'>певчие птицы</li>
+                <li class='quiz-info__item fifth'>хищные птицы</li>
+                <li class='quiz-info__item sixth'>морские птицы</li>         
+              </ul>
+            </div>
+          </div>
+          <div class='quiz-questions bird'>
+            <div class='bird__container'>
+              <div class='bird__item'>
+                <img class='bird__pic' src='./assets/images/quiz/bird-plug.jpg' alt='bird-plug'>
+              </div>
+              <div class='bird__item'>
+                <p class='bird__title'>x x x</p>
+                <div class='bird__player player'>
+                  <div class='player__control'>
+                    <button class='player__control-play play'></button>
+                  </div>
+                  <div class='player__song'></div>
+                  <div class='player__panel'>
+                    <div class='player__progress'>
+                      <div class='player__progress-bar'></div>
+                    </div>
+                    <div class='player__time'>
+                      <div class='player__time-current'>0:00</div>
+                      <div class='player__time-divider'>/</div>
+                      <div class='player__time-total'>0:00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class='player__volume'>
+                  <button class='player__volume-btn' type='button'></button>
+                  <div class='player__volume-control'>
+                    <input class='player__volume-control-slider' type='range' max='100' value='50' step='1' >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='quiz-primary'>
+            <div class='quiz-answer'>
+              <ul class='quiz-answer__list'>
+                <li class='quiz-answer__item'></li>
+                <li class='quiz-answer__item'></li>
+                <li class='quiz-answer__item'></li>
+                <li class='quiz-answer__item'></li>
+                <li class='quiz-answer__item'></li>
+                <li class='quiz-answer__item'></li>                
+              </ul>
+            </div>
+            <div class='quiz-description bird'>
+              <div class='bird__container-second'>
+                <div class='bird__item-second-container'>
+                  <div class='bird__item-second'>
+                    <img class='bird__pic-second' src='./assets/images/quiz/bird-plug.jpg' alt='bird-plug'>
+                  </div>
+                  <div class='bird__item-second'>
+                    <p class='bird__title-main-second'>x x x</p>
+                    <p class='bird__title-second'>x x x</p>
+                    <div class='bird__player-second player-second'>
+                      <div class='player__control-second'>
+                        <button class='player__control-play-second play-second'></button>
+                      </div>
+                      <div class='player__song-second'></div>
+                      <div class='player__panel-second'>
+                        <div class='player__progress-second'>
+                          <div class='player__progress-bar-second'></div>
+                        </div>
+                        <div class='player__time-second'>
+                          <div class='player__time-current-second'>0:00</div>
+                          <div class='player__time-divider-second'>/</div>
+                          <div class='player__time-total-second'>0:00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='player__volume-second'>
+                      <button class='player__volume-btn-second' type='button'></button>
+                      <div class='player__volume-control-second'>
+                        <input class='player__volume-control-slider-second' type='range' max='100' value='50' step='1' >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='bird__item-second'>
+                  <p class='bird__description-second'></p>
+                </div>
+              </div>
+              <p class='bird__text invitation__text'>Послушайте плеер. Выберите птицу из списка</p>
+            </div>                       
+          </div>
+          <button class='quiz-button btn-primary'>следующий уровень</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script type='module' src='./js/app.js'></script>
+<script type='module' src='./js/quiz.js'></script>
+<script type='module' src='./js/birds.js'></script>
+<script type='module' src='./js/birds-ru.js'></script>
+<script type='module' src='./js/birds-en.js'></script>
+<script type='module' src='./js/settings.js'></script>
+<footer class='footer'>
+	<div class='container'>
+		<div class='footer__container'>
+      <div class='footer__copyright'>
+				<p class='footer__copyright-text'>All Rights Reserved © 2022</p>
+			</div>
+			<div class='footer__socials'>
+				<ul class='footer__socials-list'>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://github.com/Zelenevskayamarina'>github</a>
+					</li>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://rs.school/js/'>R   S<br>Sc ho ol</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</footer>
+</body>
+</html>

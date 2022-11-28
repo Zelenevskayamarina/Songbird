@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>	
+    <title>songbird</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800;900&family=Raleway:wght@400;700;800&display=swap' rel='stylesheet'/>
+    <link rel='stylesheet' href='./css/app.min.css'> 
+</head>
+<body class='body'>
+  <header class='header'>
+    <div class='container'>
+      <div class='header__container'>
+        <div class='header__logo'>
+          <a class='footer__logo-link' href='#'>
+            <img class='header__logo-pic' src='./assets/images/header/bird-icon-dark.png' alt='logo'>
+          </a>
+        </div>
+        <div class='header__overlay'></div>
+          <nav class='header__nav'>
+            <ul class='header__list'>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='index' href='#'>главная</a>
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='quiz' href='quiz.html'>викторина</a>
+              </li>
+              <li class='header__item'>
+                <a class='header__link' data-id-nav-header='gallery' href='gallery.html'>галерея</a>                
+              </li>
+            </ul>
+          </nav>
+      <button class='header__burger burger'>
+        <span class='burger__line burger__line_first'></span>
+        <span class='burger__line burger__line_second'></span>
+        <span class='burger__line burger__line_third'></span>
+    </button>
+    <div class='header__setting'>
+      <p class='header__setting-option'>выбрать язык</p>
+      <select class='header__setting-language' name='language' id='language'>
+        <option value='en' class='language-option'>английский</option>
+        <option value='ru' class='language-option'>русский</option>
+      </select>
+    </div>  
+    </div>
+  </div>
+</header>
+<main class='main' data-id-page-header='index'>
+  <section class='home'>
+    <div class='container'>
+      <div class='home__container'>
+        <div class='home__info'>
+          <h2 class='home__info-title'>Songbird</h2>
+        </div>
+        <div class='home__block row'>
+          <div class='home__item col-4 col-sd-12'>
+            <div class='home__pic'>
+              <img class='home__pic-img' src='./assets/images/home/melody-yellow.webp' alt='melody yellow'/>
+            </div>
+            <div class='home__overlay'>
+              <img class='home__overlay-img' src='./assets/images/home/bird-icon-light.png' alt='bird'/>
+              <a class='home__overlay-link' href='#'>home</a>
+            </div>
+          </div>
+          <div class='home__item col-4 col-sd-12'>
+            <div class='home__pic'>
+              <img class='home__pic-img' src='./assets/images/home/melody-green.webp' alt='melody green'/>
+            </div>
+            <div class='home__overlay'>
+              <img class='home__overlay-img' src='./assets/images/home/bird-icon-light.png' alt='bird'/>
+              <a class='home__overlay-link' href='quiz.html'>quiz</a>
+            </div>
+          </div>
+          <div class='home__item col-4 col-sd-12'>
+            <div class='home__pic'>
+              <img class='home__pic-img' src='./assets/images/home/melody-pink.webp' alt='melody pink'/>
+            </div>
+            <div class='home__overlay'>
+              <img class='home__overlay-img' src='./assets/images/home/bird-icon-light.png' alt='bird'/>
+              <a class='home__overlay-link' data-id-nav-header='gallery' href='gallery.html'>gallery</a>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script type='module' src='./js/app.js'></script>
+<script type='module' src='./js/home.js'></script>
+<footer class='footer'>
+	<div class='container'>
+		<div class='footer__container'>
+      <div class='footer__copyright'>
+				<p class='footer__copyright-text'>All Rights Reserved © 2022</p>
+			</div>
+			<div class='footer__socials'>
+				<ul class='footer__socials-list'>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://github.com/Zelenevskayamarina'>github</a>
+					</li>
+					<li class='footer__social-item'>
+						<a class='footer__social-link' href='https://rs.school/js/'>R   S<br>Sc ho ol</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+
